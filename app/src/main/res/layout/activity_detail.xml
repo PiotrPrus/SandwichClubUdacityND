@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -32,9 +33,10 @@
             android:id="@+id/also_tv_header"
             style="@style/TextViewHeader"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/detail_default_margin"
             android:text="@string/detail_also_known_as_label"
             app:layout_constraintStart_toStartOf="@+id/guideline"
-            app:layout_constraintTop_toTopOf="@+id/image_iv" />
+            app:layout_constraintTop_toBottomOf="@+id/image_iv" />
 
         <TextView
             android:id="@+id/ingredients_tv_header"
@@ -53,18 +55,27 @@
         <TextView
             android:id="@+id/origin_tv"
             style="@style/TextViewDetail"
+            android:layout_width="0dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="@+id/origin_tv_header"
             app:layout_constraintTop_toBottomOf="@+id/origin_tv_header" />
 
         <TextView
             android:id="@+id/ingredients_tv"
             style="@style/TextViewDetail"
+            android:layout_width="0dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="@+id/ingredients_tv_header"
             app:layout_constraintTop_toBottomOf="@+id/ingredients_tv_header" />
 
         <TextView
             android:id="@+id/also_known_tv"
             style="@style/TextViewDetail"
+            android:layout_width="0dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/also_tv_header"
             app:layout_constraintTop_toBottomOf="@+id/also_tv_header" />
 
