@@ -55,8 +55,6 @@
         <TextView
             android:id="@+id/origin_tv"
             style="@style/TextViewDetail"
-            android:layout_width="0dp"
-            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="@+id/origin_tv_header"
             app:layout_constraintTop_toBottomOf="@+id/origin_tv_header" />
@@ -64,8 +62,6 @@
         <TextView
             android:id="@+id/ingredients_tv"
             style="@style/TextViewDetail"
-            android:layout_width="0dp"
-            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
             app:layout_constraintStart_toStartOf="@+id/ingredients_tv_header"
             app:layout_constraintTop_toBottomOf="@+id/ingredients_tv_header" />
@@ -73,8 +69,6 @@
         <TextView
             android:id="@+id/also_known_tv"
             style="@style/TextViewDetail"
-            android:layout_width="0dp"
-            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/also_tv_header"
             app:layout_constraintTop_toBottomOf="@+id/also_tv_header" />
@@ -82,8 +76,6 @@
         <TextView
             android:id="@+id/description_tv"
             style="@style/TextViewDetail"
-            android:layout_width="0dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginBottom="@dimen/detail_default_margin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/desc_tv_header"
@@ -94,6 +86,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="192dp" />
+            app:layout_constraintGuide_percent="0.5" />
     </android.support.constraint.ConstraintLayout>
 </ScrollView>
